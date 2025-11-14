@@ -9,6 +9,7 @@ import { AddOns } from "./AddOns";
 import { Summary } from "./Summary";
 import { Success } from "./Success";
 import { Aside } from "./Aside";
+import { Button } from "./Button.jsx";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -116,23 +117,6 @@ function App() {
         </Button>
       </div>
     </div>
-  );
-}
-
-export function Header({ title, subtitle }) {
-  return (
-    <div className="header">
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
-    </div>
-  );
-}
-
-export function Button({ children, className, ...rest }) {
-  return (
-    <button type="submit" className={className} {...rest}>
-      {children}
-    </button>
   );
 }
 

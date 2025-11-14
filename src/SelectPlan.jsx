@@ -1,4 +1,4 @@
-import { Header } from "./App";
+import { Header } from "./Header";
 
 export function SelectPlan({
   plans,
