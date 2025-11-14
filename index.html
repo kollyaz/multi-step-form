@@ -34,6 +34,13 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="module">
+      import RefreshRuntime from "/@react-refresh";
+      RefreshRuntime.injectIntoGlobalHook(window);
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+    </script>
+    <script type="module" src="/@vite/client"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

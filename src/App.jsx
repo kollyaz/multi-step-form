@@ -3,7 +3,7 @@ import "./App.css";
 import arcade from "./assets/images/icon-arcade.svg";
 import advanced from "./assets/images/icon-advanced.svg";
 import pro from "./assets/images/icon-pro.svg";
-import { YourInfo } from "./YourInfo";
+import { YourInfo } from "./YourInfo.jsx";
 import { SelectPlan } from "./SelectPlan";
 import { AddOns } from "./AddOns";
 import { Summary } from "./Summary";
@@ -119,20 +119,20 @@ function App() {
   );
 }
 
-export function Button({ children, className, ...rest }) {
-  return (
-    <button type="submit" className={className} {...rest}>
-      {children}
-    </button>
-  );
-}
-
 export function Header({ title, subtitle }) {
   return (
     <div className="header">
       <h1>{title}</h1>
       <p>{subtitle}</p>
     </div>
+  );
+}
+
+export function Button({ children, className, ...rest }) {
+  return (
+    <button type="submit" className={className} {...rest}>
+      {children}
+    </button>
   );
 }
 
