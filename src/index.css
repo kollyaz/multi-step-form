@@ -182,7 +182,7 @@ button {
 }
 
 
-
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .App {
     grid-template-columns: 1fr;
