@@ -1,4 +1,5 @@
 ﻿import successImg from "../assets/images/icon-thank-you.svg";
+import "./Success.css";
 
 export function Success() {
   return (

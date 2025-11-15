@@ -1,4 +1,5 @@
 ﻿import { Header } from "./Header";
+import "./Summary.css";
 
 export function Summary({ selectedPlan, selectedAddOns, plans, addOns, isOn }) {
   const selectedPlanDetails = plans.find((plan) => plan.name === selectedPlan);

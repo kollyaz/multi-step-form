@@ -1,9 +1,10 @@
 ﻿import { Steps } from "./Steps";
+import "./Aside.css";
 
 export function Aside({ step }) {
   return (
-    <ul className="aside-steps">
+    <div className="aside-steps">
       <Steps step={step} />
-    </ul>
+    </div>
   );
 }

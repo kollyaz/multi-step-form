@@ -1,4 +1,5 @@
 ﻿import { Header } from "./Header";
+import "./AddOns.css";
 
 export function AddOns({ addOns, selectedAddOns, setSelectedAddOns, isOn }) {
   const toggleSelection = (id) => {

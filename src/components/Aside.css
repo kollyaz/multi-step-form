@@ -1,0 +1,20 @@
+/* Aside */
+.aside-steps {
+  background-image: url('../assets/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+}

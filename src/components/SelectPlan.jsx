@@ -1,4 +1,5 @@
 ﻿import { Header } from "./Header";
+import "./SelectPlan.css";
 
 export function SelectPlan({
   plans,

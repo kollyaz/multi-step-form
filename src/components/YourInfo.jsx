@@ -1,6 +1,7 @@
 ﻿import { useState } from "react";
 import { Button } from "./Button";
 import { Header } from "./Header";
+import "./YourInfo.css";
 
 export function YourInfo({ nextStep }) {
   const [form, setForm] = useState({ name: "", email: "", phone: "" });

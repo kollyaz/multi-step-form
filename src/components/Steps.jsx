@@ -1,4 +1,6 @@
-﻿export function Steps({ step }) {
+﻿import "./Steps.css";
+
+export function Steps({ step }) {
   return (
     <nav className="steps-navigation">
       <ul className="steps-list">

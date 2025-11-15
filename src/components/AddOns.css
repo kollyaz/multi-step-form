@@ -1,0 +1,88 @@
+/* Add-ons */
+
+.add-on-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1.2rem 0;
+}
+
+.add-on-details h3,
+.add-on-details p {
+  margin: 0.2rem 0;
+}
+
+.add-on-item {
+  border: 1px solid hsl(229, 24%, 87%);
+  display: flex;
+  /* width: 100%; */
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  /* margin: 1.2rem 0; */
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+
+.add-on-item.selected {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(218, 100%, 97%);
+}
+
+.add-on-item:last-child {
+  margin-left: 0;
+}
+
+.add-on-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 0.2rem; */
+  width: 100%;
+}
+
+.bonus-add-on {
+  color: hsl(243, 100%, 62%);
+  /* margin-left: auto; */
+}
+
+.add-on-item input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 6px;
+  background-color: #fff;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  position: relative;
+}
+
+.add-on-item.selected .custom-checkbox {
+  background-color: hsl(243, 100%, 62%);
+  border-color: hsl(243, 100%, 62%);
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.add-on-item.selected .custom-checkbox::after {
+  opacity: 1;
+}
