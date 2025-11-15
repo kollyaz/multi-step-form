@@ -1,15 +1,15 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import "./App.css";
 import arcade from "./assets/images/icon-arcade.svg";
 import advanced from "./assets/images/icon-advanced.svg";
 import pro from "./assets/images/icon-pro.svg";
-import { YourInfo } from "./YourInfo.jsx";
-import { SelectPlan } from "./SelectPlan";
-import { AddOns } from "./AddOns";
-import { Summary } from "./Summary";
-import { Success } from "./Success";
-import { Aside } from "./Aside";
-import { Button } from "./Button.jsx";
+import { YourInfo } from "./components/YourInfo";
+import { SelectPlan } from "./components/SelectPlan";
+import { AddOns } from "./components/AddOns";
+import { Summary } from "./components/Summary";
+import { Success } from "./components/Success";
+import { Aside } from "./components/Aside";
+import { Button } from "./components/Button";
 
 function App() {
   const [step, setStep] = useState(1);
