@@ -17,6 +17,7 @@
 
 .input-field::placeholder {
   color: hsl(231, 11%, 63%);
+  font-weight: 400;
 }
 
 .input-field:focus {
