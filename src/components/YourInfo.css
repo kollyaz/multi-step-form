@@ -1,21 +1,23 @@
 /* Form Styles */
-.input-field[type="text"],
-.input-field[type="email"],
-.input-field[type="tel"] {
+.input-field {
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
   color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu', 'Inter', sans-serif;
 }
 
-.input-field::placeholder,
-.input-field[type="email"]::placeholder,
-.input-field[type="tel"]::placeholder {
+.input-field:-webkit-autofill {
+  -webkit-text-fill-color: hsl(213, 96%, 18%) !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+
+
+.input-field::placeholder {
   color: hsl(231, 11%, 63%);
 }
 
-.input-field:focus,
-.input-field:focus,
 .input-field:focus {
   outline: 2px solid hsl(243, 100%, 62%);
 }
